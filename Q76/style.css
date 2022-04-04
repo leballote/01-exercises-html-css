@@ -1,0 +1,64 @@
+:root {
+  box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+
+  position: relative;
+  margin: 1.4em 0;
+}
+
+.slider {
+  display: block;
+  width: 100%;
+}
+
+.slider-min-label {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  font-size: 1.2em;
+}
+
+.slider-max-label {
+  position: absolute;
+  text-align: right;
+  right: 0;
+  font-size: 1.2em;
+}
+
+input[type=range]{
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  display: block;
+  height: 20px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 20px;
+  /* border-radius: 50%; */
+  background: crimson;
+  margin-top: 0px;
+}

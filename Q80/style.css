@@ -1,0 +1,29 @@
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 600px;
+  border: 2px solid gray;
+  border-radius: 1em;
+}
+
+.container > .inner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.5em;
+  border: 2px cadetblue dashed; 
+  margin: 0.1em;
+}
+
+.container > .inner:first-child {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.container > .inner:last-child {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}

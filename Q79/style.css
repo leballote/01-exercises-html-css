@@ -1,0 +1,58 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  width: 100%;
+  border-radius: 1em;
+}
+
+body {
+  background-color: rgb(245, 226, 226);
+}
+
+.container {
+  display: flex;
+  /* flex-flow: row wrap; */
+}
+
+.column {
+  flex: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.grid-tile {
+  margin:.3em .8em;
+}
+
+@media (min-width: 40em) {
+  .column {
+    flex: 50%;
+  }
+
+  .grid-tile {
+    margin: 1em;
+  }
+}
+
+@media (min-width: 75em) {
+  .column {
+    flex: 25%;
+  }
+
+  .grid-tile {
+    margin: 1em calc(1.2em + 5vw);
+  }
+}
+

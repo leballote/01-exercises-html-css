@@ -1,0 +1,59 @@
+:root {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  flex-basis: 100%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+
+
+.main-nav {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+}
+
+.main-nav > li {
+  flex-basis: 100%;
+  background-color: darkgrey;
+}
+
+main {
+  display: flex;
+  flex-basis: 80%;
+  gap: 3%;
+}
+
+aside {
+  flex-basis: 20%;
+}
+
+footer {
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+}

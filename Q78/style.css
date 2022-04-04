@@ -1,0 +1,46 @@
+.square {
+  width: var(--side); 
+  height: var(--side);
+}
+
+.outer-box {
+  --side: 400px;
+  background-color: darkslategray;
+  animation: outer-motion 5s linear infinite;
+}
+
+.inner-box {
+  --side: 200px;
+  background-color: burlywood;
+  animation: inner-motion 5s linear infinite;
+}
+
+
+@keyframes inner-motion {
+  0% {
+    transform: translate(0);
+  }
+
+  29.29% {
+    transform: translate(200px, 200px);
+  }
+
+  50% {
+    transform: translate(0, 200px)
+  }
+
+  79.29% {
+    transform: translate(200px, 0);
+  }
+
+}
+
+@keyframes outer-motion {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(100%);
+  }
+}

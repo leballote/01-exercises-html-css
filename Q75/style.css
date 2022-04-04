@@ -1,0 +1,39 @@
+:root {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.pop-up-word > span {
+  display: inline-block;
+  transition: color .2s ease-in, 
+    transform .2s ease-in;
+}
+
+.pop-up-word:hover > span {
+  color: crimson;
+  transform: translateY(-4px);
+
+}
+
+.pop-up-word > span:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.pop-up-word > span:nth-child(2) {
+  transition-delay: .1s;
+}
+
+.pop-up-word > span:nth-child(3) {
+  transition-delay: .2s;
+}
+
+.pop-up-word > span:nth-child(4) {
+  transition-delay: .3s;
+}
+
+.pop-up-word > span:nth-child(5) {
+  transition-delay: .4s;
+}
