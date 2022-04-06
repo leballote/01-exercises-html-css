@@ -1,0 +1,36 @@
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.star {
+  appearance: none;
+  /* border: 1px black dashed; */
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+
+.container {
+  pointer-events: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.star {
+  pointer-events: auto;
+}
+
+.star {
+  background-image: url(./stars-empty-full.svg);
+  background-size: 520px;
+  background-position: 0 -20px;
+}
+
+.star:checked ~ .star {
+  background-color: white;
+  background-image: url(stars-empty-full.svg);
+  background-size: 520px;
+  background-position: 100px 115px;
+}
