@@ -1,13 +1,16 @@
 :root {
   --black-position: 0 -20px;
   --white-position: 100px 115px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .star {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   height: 100px;
   width: 100px;
   margin: 0;
@@ -15,8 +18,11 @@
 
 .container {
   pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .star {
