@@ -8,7 +8,6 @@
 
 .star {
   appearance: none;
-  /* border: 1px black dashed; */
   height: 100px;
   width: 100px;
   margin: 0;
@@ -26,7 +25,6 @@
 
 .star {
   background-image: url(./stars-empty-full.svg);
-  /* background-color: brown; */
   background-size: 520px;
   background-position: var(--black-position);
 }
@@ -35,18 +33,9 @@
   display: none;
 }
 
-.container:hover > .star:checked ~ .star:hover ~ .star {
-  background-position: var(--white-position);
-}
-
-.container:hover > .star:hover ~ .star:checked ~ .star {
-  background-position: var(--white-position);
-}
-
-.container:hover > .star:checked:hover ~ .star {
-  background-position: var(--white-position);
-}
-
+.container:hover > .star:checked ~ .star:hover ~ .star,
+.container:hover > .star:hover ~ .star:checked ~ .star,
+.container:hover > .star:checked:hover ~ .star,
 .container:not(:hover) > .star:checked ~ .star {
   background-position: var(--white-position);
-} 
+}
