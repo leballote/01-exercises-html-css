@@ -1,4 +1,6 @@
 :root {
+  --black-position: 0 -20px;
+  --white-position: 100px 115px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,7 +11,7 @@
   /* border: 1px black dashed; */
   height: 100px;
   width: 100px;
-  margin: 20px;
+  margin: 0;
 }
 
 .container {
@@ -24,13 +26,27 @@
 
 .star {
   background-image: url(./stars-empty-full.svg);
+  /* background-color: brown; */
   background-size: 520px;
-  background-position: 0 -20px;
+  background-position: var(--black-position);
 }
 
-.star:checked ~ .star {
-  background-color: white;
-  background-image: url(stars-empty-full.svg);
-  background-size: 520px;
-  background-position: 100px 115px;
+.star-0 {
+  display: none;
 }
+
+.container:hover > .star:checked ~ .star:hover ~ .star {
+  background-position: var(--white-position);
+}
+
+.container:hover > .star:hover ~ .star:checked ~ .star {
+  background-position: var(--white-position);
+}
+
+.container:hover > .star:checked:hover ~ .star {
+  background-position: var(--white-position);
+}
+
+.container:not(:hover) > .star:checked ~ .star {
+  background-position: var(--white-position);
+} 
