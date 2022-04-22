@@ -9,19 +9,11 @@
   box-sizing: inherit;
 }
 
-/*NOTE: I had the default flex-wrap, that is why it by default
- didn't overflow the parent even with borders and paddings 
-*/
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .element {
   padding: 0.5em;
   border: 1px solid gray;
   width: 50%;
+  float: left;
 }
 
 .container .element + .element {
